@@ -1,0 +1,179 @@
+{
+  "@@locale": "en",
+  "appTitle": "Nam Nam",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "login": "Login",
+  "@login": {
+    "description": "Login button text"
+  },
+  "signup": "Sign Up",
+  "@signup": {
+    "description": "Sign up button text"
+  },
+  "email": "Email",
+  "@email": {
+    "description": "Email field label"
+  },
+  "password": "Password",
+  "@password": {
+    "description": "Password field label"
+  },
+  "phoneNumber": "Phone Number",
+  "@phoneNumber": {
+    "description": "Phone number field label"
+  },
+  "confirmPassword": "Confirm Password",
+  "@confirmPassword": {
+    "description": "Confirm password field label"
+  },
+  "forgotPassword": "Forgot Password?",
+  "@forgotPassword": {
+    "description": "Forgot password link text"
+  },
+  "dontHaveAccount": "Don't have an account?",
+  "@dontHaveAccount": {
+    "description": "Text for users who don't have an account"
+  },
+  "alreadyHaveAccount": "Already have an account?",
+  "@alreadyHaveAccount": {
+    "description": "Text for users who already have an account"
+  },
+  "welcomeBack": "Welcome Back",
+  "@welcomeBack": {
+    "description": "Welcome message for returning users"
+  },
+  "createAccount": "Create Account",
+  "@createAccount": {
+    "description": "Create account message"
+  },
+  "enterEmail": "Enter your email",
+  "@enterEmail": {
+    "description": "Email input placeholder"
+  },
+  "enterPassword": "Enter your password",
+  "@enterPassword": {
+    "description": "Password input placeholder"
+  },
+  "enterPhone": "Enter your phone number",
+  "@enterPhone": {
+    "description": "Phone number input placeholder"
+  },
+  "confirmPasswordPlaceholder": "Confirm your password",
+  "@confirmPasswordPlaceholder": {
+    "description": "Confirm password input placeholder"
+  },
+  "loginSuccess": "Login successful",
+  "@loginSuccess": {
+    "description": "Login success message"
+  },
+  "signupSuccess": "Account created successfully",
+  "@signupSuccess": {
+    "description": "Sign up success message"
+  },
+  "errorOccurred": "An error occurred",
+  "@errorOccurred": {
+    "description": "Generic error message"
+  },
+  "invalidEmail": "Please enter a valid email",
+  "@invalidEmail": {
+    "description": "Invalid email error message"
+  },
+  "invalidPassword": "Password must be at least 6 characters",
+  "@invalidPassword": {
+    "description": "Invalid password error message"
+  },
+  "passwordsDontMatch": "Passwords don't match",
+  "@passwordsDontMatch": {
+    "description": "Password mismatch error message"
+  },
+  "invalidPhone": "Please enter a valid phone number",
+  "@invalidPhone": {
+    "description": "Invalid phone number error message"
+  },
+  "required": "This field is required",
+  "@required": {
+    "description": "Required field error message"
+  },
+  "firstName": "First Name",
+  "@firstName": {
+    "description": "First name field label"
+  },
+  "lastName": "Last Name",
+  "@lastName": {
+    "description": "Last name field label"
+  },
+  "emailAddress": "Email Address",
+  "@emailAddress": {
+    "description": "Email address field label"
+  },
+  "emailAddressOptional": "Email Address (Optional)",
+  "@emailAddressOptional": {
+    "description": "Optional email address field label"
+  },
+  "typeHere": "Type here",
+  "@typeHere": {
+    "description": "Generic placeholder text for input fields"
+  },
+  "create": "Create",
+  "@create": {
+    "description": "Create button text"
+  },
+  "createFreeAccount": "Create a free account",
+  "@createFreeAccount": {
+    "description": "Create account subtitle"
+  },
+  "firstNameRequired": "First name is required",
+  "@firstNameRequired": {
+    "description": "First name required error message"
+  },
+  "lastNameRequired": "Last name is required",
+  "@lastNameRequired": {
+    "description": "Last name required error message"
+  },
+  "phoneNumberRequired": "Phone number is required",
+  "@phoneNumberRequired": {
+    "description": "Phone number required error message"
+  },
+  "invalidEmailAddress": "Please enter a valid email address",
+  "@invalidEmailAddress": {
+    "description": "Invalid email address error message"
+  },
+  "getStarted": "Get Started",
+  "@getStarted": {
+    "description": "Get started button text"
+  },
+  "signInToAccess": "sign in to access your account",
+  "@signInToAccess": {
+    "description": "Sign in subtitle text"
+  },
+  "languageSettings": "Language Settings",
+  "@languageSettings": {
+    "description": "Language settings section title"
+  },
+  "selectLanguage": "Select Language",
+  "@selectLanguage": {
+    "description": "Select language option text"
+  },
+  "appInformation": "App Information",
+  "@appInformation": {
+    "description": "App information section title"
+  },
+  "appVersion": "App Version",
+  "@appVersion": {
+    "description": "App version label"
+  },
+  "contactSupport": "Contact Support",
+  "@contactSupport": {
+    "description": "Contact support label"
+  },
+  "privacyPolicy": "Privacy Policy",
+  "@privacyPolicy": {
+    "description": "Privacy policy label"
+  },
+  "logout": "Logout",
+  "@logout": {
+    "description": "Logout button text"
+  }
+} 

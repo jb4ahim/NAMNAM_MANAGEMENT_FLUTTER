@@ -1,0 +1,179 @@
+{
+  "@@locale": "ar",
+  "appTitle": "نم نم",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "login": "تسجيل الدخول",
+  "@login": {
+    "description": "Login button text"
+  },
+  "signup": "إنشاء حساب",
+  "@signup": {
+    "description": "Sign up button text"
+  },
+  "email": "البريد الإلكتروني",
+  "@email": {
+    "description": "Email field label"
+  },
+  "password": "كلمة المرور",
+  "@password": {
+    "description": "Password field label"
+  },
+  "phoneNumber": "رقم الهاتف",
+  "@phoneNumber": {
+    "description": "Phone number field label"
+  },
+  "confirmPassword": "تأكيد كلمة المرور",
+  "@confirmPassword": {
+    "description": "Confirm password field label"
+  },
+  "forgotPassword": "نسيت كلمة المرور؟",
+  "@forgotPassword": {
+    "description": "Forgot password link text"
+  },
+  "dontHaveAccount": "ليس لديك حساب؟",
+  "@dontHaveAccount": {
+    "description": "Text for users who don't have an account"
+  },
+  "alreadyHaveAccount": "لديك حساب بالفعل؟",
+  "@alreadyHaveAccount": {
+    "description": "Text for users who already have an account"
+  },
+  "welcomeBack": "مرحباً بعودتك",
+  "@welcomeBack": {
+    "description": "Welcome message for returning users"
+  },
+  "createAccount": "إنشاء حساب",
+  "@createAccount": {
+    "description": "Create account message"
+  },
+  "enterEmail": "أدخل بريدك الإلكتروني",
+  "@enterEmail": {
+    "description": "Email input placeholder"
+  },
+  "enterPassword": "أدخل كلمة المرور",
+  "@enterPassword": {
+    "description": "Password input placeholder"
+  },
+  "enterPhone": "أدخل رقم هاتفك",
+  "@enterPhone": {
+    "description": "Phone number input placeholder"
+  },
+  "confirmPasswordPlaceholder": "أكد كلمة المرور",
+  "@confirmPasswordPlaceholder": {
+    "description": "Confirm password input placeholder"
+  },
+  "loginSuccess": "تم تسجيل الدخول بنجاح",
+  "@loginSuccess": {
+    "description": "Login success message"
+  },
+  "signupSuccess": "تم إنشاء الحساب بنجاح",
+  "@signupSuccess": {
+    "description": "Sign up success message"
+  },
+  "errorOccurred": "حدث خطأ",
+  "@errorOccurred": {
+    "description": "Generic error message"
+  },
+  "invalidEmail": "يرجى إدخال بريد إلكتروني صحيح",
+  "@invalidEmail": {
+    "description": "Invalid email error message"
+  },
+  "invalidPassword": "كلمة المرور يجب أن تكون 6 أحرف على الأقل",
+  "@invalidPassword": {
+    "description": "Invalid password error message"
+  },
+  "passwordsDontMatch": "كلمات المرور غير متطابقة",
+  "@passwordsDontMatch": {
+    "description": "Password mismatch error message"
+  },
+  "invalidPhone": "يرجى إدخال رقم هاتف صحيح",
+  "@invalidPhone": {
+    "description": "Invalid phone number error message"
+  },
+  "required": "هذا الحقل مطلوب",
+  "@required": {
+    "description": "Required field error message"
+  },
+  "firstName": "الاسم الأول",
+  "@firstName": {
+    "description": "First name field label"
+  },
+  "lastName": "اسم العائلة",
+  "@lastName": {
+    "description": "Last name field label"
+  },
+  "emailAddress": "البريد الإلكتروني",
+  "@emailAddress": {
+    "description": "Email address field label"
+  },
+  "emailAddressOptional": "البريد الإلكتروني (اختياري)",
+  "@emailAddressOptional": {
+    "description": "Optional email address field label"
+  },
+  "typeHere": "اكتب هنا",
+  "@typeHere": {
+    "description": "Generic placeholder text for input fields"
+  },
+  "create": "إنشاء",
+  "@create": {
+    "description": "Create button text"
+  },
+  "createFreeAccount": "إنشاء حساب مجاني",
+  "@createFreeAccount": {
+    "description": "Create account subtitle"
+  },
+  "firstNameRequired": "الاسم الأول مطلوب",
+  "@firstNameRequired": {
+    "description": "First name required error message"
+  },
+  "lastNameRequired": "اسم العائلة مطلوب",
+  "@lastNameRequired": {
+    "description": "Last name required error message"
+  },
+  "phoneNumberRequired": "رقم الهاتف مطلوب",
+  "@phoneNumberRequired": {
+    "description": "Phone number required error message"
+  },
+  "invalidEmailAddress": "يرجى إدخال بريد إلكتروني صحيح",
+  "@invalidEmailAddress": {
+    "description": "Invalid email address error message"
+  },
+  "getStarted": "ابدأ الآن",
+  "@getStarted": {
+    "description": "Get started button text"
+  },
+  "signInToAccess": "سجل الدخول للوصول إلى حسابك",
+  "@signInToAccess": {
+    "description": "Sign in subtitle text"
+  },
+  "languageSettings": "إعدادات اللغة",
+  "@languageSettings": {
+    "description": "Language settings section title"
+  },
+  "selectLanguage": "اختر اللغة",
+  "@selectLanguage": {
+    "description": "Select language option text"
+  },
+  "appInformation": "معلومات التطبيق",
+  "@appInformation": {
+    "description": "App information section title"
+  },
+  "appVersion": "إصدار التطبيق",
+  "@appVersion": {
+    "description": "App version label"
+  },
+  "contactSupport": "تواصل مع الدعم",
+  "@contactSupport": {
+    "description": "Contact support label"
+  },
+  "privacyPolicy": "سياسة الخصوصية",
+  "@privacyPolicy": {
+    "description": "Privacy policy label"
+  },
+  "logout": "تسجيل الخروج",
+  "@logout": {
+    "description": "Logout button text"
+  }
+} 
