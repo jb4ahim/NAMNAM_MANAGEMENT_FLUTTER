@@ -1,7 +1,7 @@
 import 'package:namnam/model/response/ApiResponse.dart';
 
 abstract class BaseApiService {
-  final String baseUrl = "https://managmement-api.onrender.com/";
+  final String baseUrl = "https://managmement-api.onrender.com/api/";
   Future<ApiResponse> postResponse(
     String url,
     Map<String, dynamic> json,

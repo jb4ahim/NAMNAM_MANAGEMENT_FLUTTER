@@ -153,10 +153,11 @@ class _LoginWebPageState extends State<LoginWebPage> {
                                   color: Colors.white.withOpacity(0.2),
                                   borderRadius: BorderRadius.circular(20),
                                 ),
-                                child: Icon(
-                                  Icons.restaurant,
-                                  size: 80,
-                                  color: Colors.white,
+                                child: Image.asset(
+                                  "assets/logo/namnam_white_logo.png",
+                                  height: 80,
+                                  width: 80,
+                                  fit: BoxFit.contain,
                                 ),
                               ),
                               const SizedBox(height: 20),
@@ -211,10 +212,11 @@ class _LoginWebPageState extends State<LoginWebPage> {
                                 crossAxisAlignment: CrossAxisAlignment.stretch,
                                 children: [
                                   if (size.width <= 800) ...[
-                                    Icon(
-                                      Icons.restaurant,
-                                      size: 60,
-                                      color: Appcolors.appPrimaryColor,
+                                    Image.asset(
+                                      "assets/logo/namnam_white_logo.png",
+                                      height: 60,
+                                      width: 60,
+                                      fit: BoxFit.contain,
                                     ),
                                     const SizedBox(height: 16),
                                     Text(

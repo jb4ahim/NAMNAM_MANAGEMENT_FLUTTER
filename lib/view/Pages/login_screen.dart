@@ -36,7 +36,7 @@ class _LoginScreenState extends State<LoginScreen> {
             //header content
             Stack(
               children: [
-                Column(children: [Image.asset("assets/images/backgroundlogin.png")]),
+                Column(children: [Image.asset("assets/logo/namnam_white_logo.png")]),
                 Center(
                   child: Column(
                     children: [

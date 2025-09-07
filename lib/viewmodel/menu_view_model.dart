@@ -46,6 +46,12 @@ class MenuViewModel extends ChangeNotifier {
       route: '/users',
     ),
     MenuItem(
+      icon: Icons.map,
+      title: 'Zones',
+      action: MenuAction.navigate,
+      route: '/zones',
+    ),
+    MenuItem(
       icon: Icons.analytics,
       title: 'Analytics',
       action: MenuAction.navigate,

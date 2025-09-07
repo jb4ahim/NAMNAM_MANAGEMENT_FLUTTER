@@ -1,19 +1,24 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:namnam/core/helpers/locale_provider.dart';
 import 'package:namnam/l10n/app_localizations.dart';
-import 'package:namnam/view/Pages/login_screen.dart';
-import 'package:namnam/view/Pages/settings_screen.dart';
-import 'package:namnam/view/Web/Pages/loginWeb.dart';
 import 'package:namnam/core/router/app_router.dart';
 import 'package:namnam/core/Utility/Preferences.dart';
 import 'package:namnam/viewmodel/login_view_model.dart';
 import 'package:namnam/viewmodel/menu_view_model.dart';
+import 'package:namnam/viewmodel/categories_view_model.dart';
+import 'package:namnam/viewmodel/upload_view_model.dart';
+import 'package:namnam/viewmodel/zones_view_model.dart';
+import 'package:namnam/viewmodel/merchants_view_model.dart';
+import 'package:namnam/viewmodel/customers_view_model.dart';
+import 'package:namnam/viewmodel/orders_view_model.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  
+  // Initialize Google Maps
+  // Note: For web, the API key is configured in index.html
   
   // Initialize SharedPreferences
   final prefs = await SharedPreferences.getInstance();
@@ -35,6 +40,12 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (context) => LocaleProvider()),
         ChangeNotifierProvider(create: (context) => LoginViewModel()),
         ChangeNotifierProvider(create: (context) => MenuViewModel()),
+        ChangeNotifierProvider(create: (context) => CategoriesViewModel()),
+        ChangeNotifierProvider(create: (context) => UploadViewModel()),
+        ChangeNotifierProvider(create: (context) => ZonesViewModel()),
+        ChangeNotifierProvider(create: (context) => MerchantsViewModel()),
+        ChangeNotifierProvider(create: (context) => CustomersViewModel()),
+        ChangeNotifierProvider(create: (context) => OrdersViewModel()),
       ],
       child: Consumer2<PrefProvider, LocaleProvider>(
         builder: (context, prefProvider, localeProvider, child) {
