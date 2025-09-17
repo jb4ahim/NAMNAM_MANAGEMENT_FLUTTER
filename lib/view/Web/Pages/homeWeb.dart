@@ -379,7 +379,7 @@ class _HomeWebPageState extends State<HomeWebPage> {
         return const SettingsPage();
       case 'notifications':
         return const NotificationsPage();
-      case 'push-notifications':
+      case 'push notifications':
         return const PushNotificationsPage();
       case 'reports':
         return const ReportsPage();

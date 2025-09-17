@@ -3,7 +3,7 @@ import 'package:fl_chart/fl_chart.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 import 'package:namnam/core/Utility/appcolors.dart';
 import 'package:namnam/view/Web/Pages/drivers_page.dart';
-import 'package:namnam/model/merchant.dart';
+import 'package:namnam/model/merchant_item.dart';
 import 'package:namnam/model/customer.dart';
 import 'package:namnam/model/order.dart';
 import 'package:namnam/view/Web/widgets/chart_loading_animation.dart';
@@ -12,7 +12,7 @@ import 'package:namnam/view/Web/widgets/chart_fade_animation.dart';
 
 class ComprehensiveAnalytics extends StatefulWidget {
   final List<Driver> drivers;
-  final List<Merchant> merchants;
+  final List<MerchantItem> merchants;
   final List<Customer> customers;
   final List<Order> orders;
 
@@ -182,7 +182,7 @@ class _ComprehensiveAnalyticsState extends State<ComprehensiveAnalytics> {
           child: _buildMetricCard(
             'Total Merchants',
             '${widget.merchants.length}',
-            '${widget.merchants.where((m) => m.status == 'active').length} active',
+            '',
             Icons.store,
             Colors.green,
           ),
@@ -1170,10 +1170,8 @@ class _ComprehensiveAnalyticsState extends State<ComprehensiveAnalytics> {
   }
 
   List<CategoryData> _generateMerchantCategoryData() {
-    final Map<String, int> categoryCounts = {};
-    for (final merchant in widget.merchants) {
-      categoryCounts[merchant.category] = (categoryCounts[merchant.category] ?? 0) + 1;
-    }
+    // New API has no category on merchant items; show single bucket
+    final Map<String, int> categoryCounts = {'All': widget.merchants.length};
 
     final colors = [Colors.blue, Colors.green, Colors.orange, Colors.purple, Colors.red];
     return categoryCounts.entries.map((entry) {

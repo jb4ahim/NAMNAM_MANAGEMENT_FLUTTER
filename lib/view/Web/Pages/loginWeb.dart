@@ -44,7 +44,6 @@ class _LoginWebPageState extends State<LoginWebPage> {
         
         // Save access token if available
         if (loginViewModel.loginResponse?.accessToken != null) {
-          prefProvider.setAccessToken(loginViewModel.loginResponse!.accessToken!);
         }
         
         // Save user ID if available

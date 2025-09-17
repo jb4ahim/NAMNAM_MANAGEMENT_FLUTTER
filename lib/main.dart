@@ -50,7 +50,7 @@ class MyApp extends StatelessWidget {
       child: Consumer2<PrefProvider, LocaleProvider>(
         builder: (context, prefProvider, localeProvider, child) {
           return MaterialApp.router(
-            title: 'Nam Nam Management',
+            title: 'NamNam Management',
             debugShowCheckedModeBanner: false,
             
             // Localization setup

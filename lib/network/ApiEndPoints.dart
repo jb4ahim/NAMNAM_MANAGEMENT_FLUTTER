@@ -5,6 +5,7 @@ class ApiEndPoints {
   static const String uploadPresign = "uploads/presign";
   static const String zones = "zones";
   static const String zonesPolygonsMultiple = "zones/polygons/multiple";
+  static const String merchants = "merchants";
   
   // Dynamic endpoint for getting zone polygons: zones/{zoneId}/polygons
   static String getZonePolygons(int zoneId) => "zones/$zoneId/polygons";

@@ -2,26 +2,31 @@ class LoginResponse {
   final String? managementUserId;
   final String? userId;
   final String? accessToken;
+  final String? refreshToken;
 
   LoginResponse({
     this.managementUserId,
     this.userId,
     this.accessToken,
+    this.refreshToken,
   });
 
   factory LoginResponse.fromJson(Map<String, dynamic> json) {
+    // The API returns camelCase keys inside data
     return LoginResponse(
-      managementUserId: json['management_user_id'],
-      userId: json['user_id'],
-      accessToken: json['access_token'],
+      managementUserId: json['managementUserId'] ?? json['management_user_id'],
+      userId: json['userId'] ?? json['user_id'],
+      accessToken: json['accessToken'] ?? json['access_token'],
+      refreshToken: json['refreshToken'] ?? json['refresh_token'],
     );
   }
 
   Map<String, dynamic> toJson() {
     return {
-      'management_user_id': managementUserId,
-      'user_id': userId,
-      'access_token': accessToken,
+      'managementUserId': managementUserId,
+      'userId': userId,
+      'accessToken': accessToken,
+      'refreshToken': refreshToken,
     };
   }
 }

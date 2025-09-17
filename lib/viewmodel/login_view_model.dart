@@ -5,6 +5,8 @@ import 'package:namnam/model/response/login_response.dart';
 import 'package:namnam/model/response/Status.dart';
 import 'package:namnam/network/services/auth_service.dart';
 import 'package:namnam/network/services/auth_service_impl.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:namnam/core/Utility/Preferences.dart';
 
 class LoginViewModel extends ChangeNotifier {
   final AuthService _authService = AuthServiceImpl();
@@ -39,7 +41,27 @@ class LoginViewModel extends ChangeNotifier {
         print('LoginViewModel: Login successful!');
         _loginResponse = response.data;
         print('LoginViewModel: Access Token: ${response.data?.accessToken}');
-        print('LoginViewModel: User ID: ${response.data?.userId}');
+        print('LoginViewModel: User ID: ${response.data?.userId ?? response.data?.managementUserId}');
+        // Persist token and login state
+        try {
+          final prefs = await SharedPreferences.getInstance();
+          final prefProvider = PrefProvider(prefs);
+          final token = response.data?.accessToken ?? '';
+          if (token.isNotEmpty) {
+            prefProvider.setAccessToken(token);
+          }
+          prefProvider.login();
+          final parsedUserId = int.tryParse(
+            (response.data?.userId?.isNotEmpty == true
+                ? response.data?.userId
+                : response.data?.managementUserId) ?? '',
+          );
+          if (parsedUserId != null) {
+            prefProvider.setuserId(parsedUserId);
+          }
+        } catch (e) {
+          print('LoginViewModel: Error saving token/user: $e');
+        }
         _setLoading(false);
         return true;
       } else {
